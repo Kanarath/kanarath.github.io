@@ -1,464 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Gerard Montero | Digital Ronin</title>
-
-    <meta name="description"
-        content="Cybersecurity Analyst, Pentester, OSINT Researcher, Developer & Maker">
-
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gerard Montero · Pentester junior y AI Security</title>
+<meta name="description" content="Gerard Montero Sellarés: pentester junior, consultor ISO 27001 e implantación de IA en empresas. Formación diaria en AI Security con AI RONIN, su propia academia de AI Red Teaming.">
+<meta name="author" content="Gerard Montero Sellarés">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="canonical" href="https://kanarath.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Gerard Montero · Pentester junior y AI Security">
+<meta property="og:description" content="Pentesting, AI Security e implantación de IA. TryHackMe Top 4%, Jr Penetration Tester y creador de AI RONIN.">
+<meta property="og:url" content="https://kanarath.github.io/">
+<meta property="og:image" content="https://kanarath.github.io/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Gerard Montero Sellarés","alternateName":"Kanarath","jobTitle":"Pentester junior · AI Security","url":"https://kanarath.github.io/","address":{"@type":"PostalAddress","addressLocality":"Mataró","addressRegion":"Barcelona","addressCountry":"ES"},"knowsLanguage":["es","ca","en","zh"],"sameAs":["https://www.linkedin.com/in/gerard-montero-sellares-3005499a/","https://github.com/Kanarath","https://tryhackme.com/p/kanarath"]}
+</script>
 </head>
-
 <body>
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
 
-    <!-- ================================= -->
-    <!-- PCB BACKGROUND LAYER -->
-    <!-- ================================= -->
+<header class="nav" id="top">
+  <a class="brand" href="#top"><span class="tag-red">[GM-01]</span> KANARATH</a>
+  <button class="burger" aria-label="Menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" class="menu">
+    <a href="#experiencia" data-i18n="nav.exp">experiencia</a>
+    <a href="#proyectos" data-i18n="nav.proj">proyectos</a>
+    <a href="#ai-ronin">ai_ronin</a>
+    <a href="#certs" data-i18n="nav.certs">certs</a>
+    <a href="#contacto" data-i18n="nav.contact">contacto</a>
+    <button class="lang" id="lang" aria-label="Change language to English">EN</button>
+  </nav>
+</header>
 
-    <div id="pcb-background">
-        <canvas id="circuit-canvas"></canvas>
+<main id="main">
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker"><b>ONLINE</b><span data-i18n="hero.kicker">PENTEST // AI SECURITY // IA APLICADA</span></p>
+    <h1>Gerard <span>Montero</span></h1>
+    <p class="lead" data-i18n="hero.lead">Pentester junior y consultor ISO 27001. <em>Implanto IA en empresas</em> y entreno AI Red Teaming a diario con mi propia academia: AI RONIN.</p>
+    <ul class="stats">
+      <li><b>TOP 4%</b><span>TryHackMe</span></li>
+      <li><b>JR PT</b><span data-i18n="stat.jrpt">certificado</span></li>
+      <li><b>129</b><span data-i18n="stat.missions">misiones AI RONIN</span></li>
+      <li><b>5</b><span data-i18n="stat.osint">tools OSINT</span></li>
+    </ul>
+    <div class="btns">
+      <a class="btn btn-red" href="cv/Gerard-Montero-CV-ES.pdf" download data-i18n="hero.cv" data-i18n-href="cv">DESCARGAR CV</a>
+      <a class="btn btn-ghost" href="#proyectos" data-i18n="hero.proj">VER PROYECTOS</a>
     </div>
-
-    <!-- ================================= -->
-    <!-- NAVBAR -->
-    <!-- ================================= -->
-
-    <nav class="navbar">
-
-        <div class="logo-container">
-
-            <div class="logo-symbol">
-                GM
-            </div>
-
-            <div class="logo-text">
-
-                <span class="name">
-                    GERARD MONTERO
-                </span>
-
-                <span class="subtitle">
-                    DIGITAL RONIN
-                </span>
-
-            </div>
-
-        </div>
-
-        <ul class="nav-links">
-
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#journey">Trayectoria</a></li>
-            <li><a href="#lab">Laboratorio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- ================================= -->
-    <!-- HERO -->
-    <!-- ================================= -->
-
-    <section id="hero">
-
-        <div class="hero-content">
-
-            <span class="hero-kicker">
-                CYBERSECURITY • OSINT • MAKER
-            </span>
-
-            <h1>
-                Digital Ronin
-            </h1>
-
-            <h2>
-                Gerard Montero Sellarés
-            </h2>
-
-            <p class="hero-description">
-
-                Analista de Ciberseguridad, Pentester y desarrollador orientado a
-                la investigación, automatización y protección de infraestructuras.
-
-                Mi enfoque combina pensamiento analítico, experiencia técnica,
-                redes, OSINT y desarrollo para transformar información en seguridad.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#about" class="btn-primary">
-                    Explorar Perfil
-                </a>
-
-                <a href="#contact" class="btn-secondary">
-                    Contactar
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image-container">
-
-            <div class="image-frame">
-
-                <!-- FOTO -->
-
-                <img src="GerardWeb.png"
-                    alt="Gerard Montero">
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- ABOUT -->
-    <!-- ================================= -->
-
-    <section id="about" class="section">
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                ABOUT
-            </span>
-
-            <h2>
-                Más allá de la tecnología
-            </h2>
-
-        </div>
-
-        <div class="about-grid">
-
-            <div class="about-text">
-
-                <p>
-
-                    Mi trayectoria profesional combina ciberseguridad,
-                    redes, automatización, desarrollo e investigación.
-
-                </p>
-
-                <p>
-
-                    Tras años trabajando en entornos internacionales
-                    y de alta exigencia, orienté mi carrera hacia la
-                    protección de sistemas, análisis de vulnerabilidades
-                    y monitorización avanzada.
-
-                </p>
-
-                <p>
-
-                    Disfruto resolviendo problemas complejos,
-                    investigando cómo funcionan las cosas
-                    y construyendo soluciones técnicas eficientes.
-
-                </p>
-
-            </div>
-
-            <div class="about-stats">
-
-                <div class="stat-card">
-                    <span class="stat-value">Top 5%</span>
-                    <span class="stat-label">TryHackMe</span>
-                </div>
-
-                <div class="stat-card">
-                    <span class="stat-value">C1</span>
-                    <span class="stat-label">English</span>
-                </div>
-
-                <div class="stat-card">
-                    <span class="stat-value">HSK3</span>
-                    <span class="stat-label">Mandarin</span>
-                </div>
-
-                <div class="stat-card">
-                    <span class="stat-value">24/7</span>
-                    <span class="stat-label">Learning Mode</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- EXPERTISE -->
-    <!-- ================================= -->
-
-    <section id="expertise" class="section">
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                EXPERTISE
-            </span>
-
-            <h2>
-                Áreas de Especialización
-            </h2>
-
-        </div>
-
-        <div class="expertise-grid">
-
-            <article class="expertise-card">
-
-                <h3>Offensive Security</h3>
-
-                <ul>
-
-                    <li>OWASP</li>
-                    <li>Web Pentesting</li>
-                    <li>Burp Suite</li>
-                    <li>Nessus</li>
-                    <li>Metasploit</li>
-
-                </ul>
-
-            </article>
-
-            <article class="expertise-card">
-
-                <h3>Networks</h3>
-
-                <ul>
-
-                    <li>TCP/IP</li>
-                    <li>DNS</li>
-                    <li>VPN</li>
-                    <li>Routing</li>
-                    <li>Wireshark</li>
-
-                </ul>
-
-            </article>
-
-            <article class="expertise-card">
-
-                <h3>OSINT</h3>
-
-                <ul>
-
-                    <li>Information Gathering</li>
-                    <li>Data Correlation</li>
-                    <li>Automation</li>
-                    <li>Research</li>
-
-                </ul>
-
-            </article>
-
-            <article class="expertise-card">
-
-                <h3>Development</h3>
-
-                <ul>
-
-                    <li>Python</li>
-                    <li>Bash</li>
-                    <li>JavaScript</li>
-                    <li>ESP32</li>
-                    <li>Arduino</li>
-
-                </ul>
-
-            </article>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- TIMELINE -->
-    <!-- ================================= -->
-
-    <section id="journey" class="section">
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                JOURNEY
-            </span>
-
-            <h2>
-                Trayectoria
-            </h2>
-
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <span class="year">2009</span>
-                <p>Sistemas Microinformáticos y Redes</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="year">2022</span>
-                <p>Desarrollo y Proyectos Tecnológicos</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="year">2024</span>
-                <p>Front-End Development</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="year">2025</span>
-                <p>IronHack Cybersecurity</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="year">2025</span>
-                <p>Cybersecurity Analyst</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- LAB -->
-    <!-- ================================= -->
-
-    <section id="lab" class="section">
-
-        <div class="section-header">
-
-            <span class="section-tag">
-                LAB
-            </span>
-
-            <h2>
-                Laboratorio Personal
-            </h2>
-
-        </div>
-
-        <div class="lab-grid">
-
-            <div class="lab-card">
-                <h3>Pentesting Lab</h3>
-                <p>Entornos de práctica para explotación ética y análisis de vulnerabilidades.</p>
-            </div>
-
-            <div class="lab-card">
-                <h3>OSINT Automation</h3>
-                <p>Scripts para recolección, análisis y correlación de información.</p>
-            </div>
-
-            <div class="lab-card">
-                <h3>IoT Security</h3>
-                <p>ESP32, sensores y automatización con enfoque en seguridad.</p>
-            </div>
-
-            <div class="lab-card">
-                <h3>Research</h3>
-                <p>Investigación continua sobre nuevas técnicas, herramientas y metodologías.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- PHILOSOPHY -->
-    <!-- ================================= -->
-
-    <section id="philosophy">
-
-        <div class="philosophy-content">
-
-            <h2>
-                Principios
-            </h2>
-
-            <div class="principles">
-
-                <span>Disciplina</span>
-                <span>Aprendizaje Continuo</span>
-                <span>Pensamiento Crítico</span>
-                <span>Evidencia sobre Suposiciones</span>
-                <span>Construir para Comprender</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- CONTACT -->
-    <!-- ================================= -->
-
-    <section id="contact">
-
-        <h2>
-            Contacto
-        </h2>
-
-        <p>
-            Disponible para oportunidades relacionadas con
-            ciberseguridad, análisis, automatización y proyectos tecnológicos.
-        </p>
-
-        <div class="contact-links">
-
-            <a href="mailto:gerard.montero.s@gmail.com">
-                Email
-            </a>
-
-            <a href="https://github.com/Kanarath" target="_blank">
-                GitHub
-            </a>
-
-            <a href="https://tryhackme.com/p/kanarath" target="_blank">
-                TryHackMe
-            </a>
-
-            <a href="https://www.linkedin.com/in/gerard-montero-sellares-3005499a/" target="_blank">
-                LinkedIn
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- ================================= -->
-    <!-- FOOTER -->
-    <!-- ================================= -->
-
-    <footer>
-
-        <p>
-            © 2026 Gerard Montero Sellarés · Digital Ronin
-        </p>
-
-    </footer>
-
-    <script src="script.js"></script>
-
+  </div>
+  <figure class="hero-photo">
+    <i class="c a"></i><i class="c b"></i><i class="c cc"></i><i class="c d"></i>
+    <span class="lab">OPERATOR</span><span class="lab2">MATARÓ · BCN</span>
+    <picture>
+      <source srcset="img/gerard.webp" type="image/webp">
+      <img src="img/gerard.jpg" width="717" height="820" alt="Retrato de Gerard Montero">
+    </picture>
+  </figure>
+</section>
+
+<section class="section" id="perfil">
+  <header class="sh"><span class="sn">01</span><h2 data-i18n="h.profile">Perfil</h2></header>
+  <div class="profile">
+    <div>
+      <p data-i18n="p.1">Vengo de muchos sitios: redes, desarrollo, videojuegos, atención al cliente y docencia en China. Ahora me dedico a la ciberseguridad: he hecho pentesting web y de red con metodología OWASP, implanto ISO 27001 de principio a fin y llevo la IA generativa a empresas para que trabajen mejor.</p>
+      <p data-i18n="p.2">Aprendo construyendo. Cuando quiero dominar algo, me diseño un curso gamificado y lo uso cada día. Así nacieron <a href="#ai-ronin">AI RONIN</a> (AI Engineering y AI Security) y <a href="#proyectos">RoninShell</a> (pentesting).</p>
+      <p data-i18n="p.3">Busco un puesto en <strong>pentesting, seguridad ofensiva o AI Security</strong>, en remoto o híbrido.</p>
+    </div>
+    <ul class="facts">
+      <li><span data-i18n="f.lang">Idiomas</span><b data-i18n="f.langv">Español y catalán nativos · Inglés C1 · Chino HSK 3</b></li>
+      <li><span data-i18n="f.loc">Ubicación</span><b data-i18n="f.locv">Mataró (Barcelona) · remoto o híbrido</b></li>
+      <li><span data-i18n="f.focus">Foco</span><b data-i18n="f.focusv">Pentesting · AI Red Teaming · IA aplicada</b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="experiencia">
+  <header class="sh"><span class="sn">02</span><h2 data-i18n="h.exp">Experiencia</h2></header>
+  <ol class="timeline">
+    <li>
+      <p class="when" data-i18n="e1.when">sept. 2026 — actualidad</p>
+      <h3 data-i18n="e1.role">Consultor de Ciberseguridad y Auditor Técnico</h3>
+      <p class="org">SPG Certificación · Barcelona</p>
+      <ul>
+        <li data-i18n="e1.a">Implantación completa de ISO/IEC 27001 en clientes: además de la documentación, formo al equipo para que entienda el sistema y llegue preparado a la auditoría.</li>
+        <li data-i18n="e1.b">Implantación de IA generativa en un cliente: skills para Claude que gestionan su documentación y generan informes.</li>
+        <li data-i18n="e1.c">Apoyo técnico en una campaña de simulación de phishing.</li>
+        <li data-i18n="e1.d">Auditorías de ISO 9001, 14001, 45001 y 27001.</li>
+      </ul>
+    </li>
+    <li>
+      <p class="when" data-i18n="e2.when">oct. 2025 — dic. 2025</p>
+      <h3 data-i18n="e2.role">Pentester / Cybersecurity Analyst (prácticas)</h3>
+      <p class="org">Sección 9 Consultoría · Barcelona</p>
+      <ul>
+        <li data-i18n="e2.a">Pentesting de aplicaciones web con metodología OWASP y auditorías de red interna y externa, con apoyo de IA para identificar vectores de ataque.</li>
+        <li data-i18n="e2.b">Monitorización con Zabbix: ajuste de alertas y paneles para reducir falsos positivos.</li>
+        <li data-i18n="e2.c">Diagnóstico de fallos en túneles VPN que llevó a actualizar la red y estabilizar la conectividad remota.</li>
+        <li data-i18n="e2.d">Formación de concienciación sobre phishing e ingeniería social.</li>
+      </ul>
+    </li>
+    <li>
+      <p class="when">2012 — 2024</p>
+      <h3 data-i18n="e3.role">Antes de la ciberseguridad</h3>
+      <p class="org" data-i18n="e3.org">Atención al cliente, ventas, docencia y videojuegos</p>
+      <ul>
+        <li data-i18n="e3.a">Atención al cliente y ventas en Mandarina Duck (La Roca Village) y Movistar Prosegur Alarmas.</li>
+        <li data-i18n="e3.b">Profesor de español e inglés en Barcelona y en China.</li>
+        <li data-i18n="e3.c">Diseño de videojuegos en Unity (proyectos propios).</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="ai-ronin">
+  <header class="sh"><span class="sn">03</span><h2>AI RONIN</h2></header>
+  <div class="feature">
+    <div>
+      <p class="kicker small"><b>FLAGSHIP</b><span data-i18n="ar.k">ACADEMIA DE AI ENGINEERING Y AI SECURITY</span></p>
+      <p class="big" data-i18n="ar.lead">No me limito a usar la IA: aprendo a construirla, atacarla y defenderla.</p>
+      <p data-i18n="ar.p">AI RONIN es una academia interactiva hecha en Godot 4 con laboratorios reales en Python y modelos locales. La he diseñado y dirigido yo, con el desarrollo asistido por IA (Claude Code), y la uso a diario como alumno.</p>
+      <ul class="chips">
+        <li>OWASP Top 10 for LLM</li><li>OWASP Agentic Top 10</li><li>MITRE ATLAS</li><li>Prompt injection</li><li data-i18n="ar.c1">Seguridad de RAG y agentes</li><li>MCP</li><li>garak · promptfoo · PyRIT</li><li>Ollama</li>
+      </ul>
+      <a class="btn btn-ghost" href="https://github.com/Kanarath/ai-ronin" target="_blank" rel="noopener" data-i18n="ar.btn">VER EN GITHUB</a>
+    </div>
+    <ul class="term" aria-label="Contenido de AI RONIN">
+      <li><b>$</b> ronin mapa</li>
+      <li>T1–T10 <span data-i18n="ar.t1">fundamentos de ML y LLM</span></li>
+      <li>A1–A7 <span data-i18n="ar.t2">ataques y defensas: prompts, RAG, agentes</span></li>
+      <li>O1–O7 <span data-i18n="ar.t3">método red team e informes</span></li>
+      <li>E1–E4 <span data-i18n="ar.t4">ML adversarial y AI Ops</span></li>
+      <li>C5 <span data-i18n="ar.t5">AI Red Team Assessment final</span></li>
+      <li class="ok">129 <span data-i18n="ar.t6">misiones · modo CTF</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="proyectos">
+  <header class="sh"><span class="sn">04</span><h2 data-i18n="h.proj">Proyectos</h2></header>
+  <div class="cards">
+    <article class="card">
+      <p class="ct">GODOT 4 · PENTESTING</p>
+      <h3>RoninShell</h3>
+      <p data-i18n="pr.rs">Simulador de pentesting con terminal Linux simulada: reconocimiento de red, auditoría web autorizada y redacción de informes con evidencias.</p>
+      <a href="https://github.com/Kanarath/RoninShell" target="_blank" rel="noopener">github.com/Kanarath/RoninShell →</a>
+    </article>
+    <article class="card">
+      <p class="ct">PYTHON · OSINT</p>
+      <h3>Suite OSINT</h3>
+      <p data-i18n="pr.os">Cinco herramientas de código abierto: Sock_Spy (perfiles simulados para formación), Guardian_Spy (OPSEC y navegación aislada), Dioptra_Spy y Pin_Grid_Spy (geolocalización y EXIF en mapa) y Visual_Case_Spy.</p>
+      <a href="https://github.com/Kanarath/Sock_Spy" target="_blank" rel="noopener">github.com/Kanarath/Sock_Spy →</a>
+    </article>
+    <article class="card">
+      <p class="ct">WEB · PENTESTING</p>
+      <h3>Pentest Academy</h3>
+      <p data-i18n="pr.pa">Curso web de pentesting por módulos (web, autenticación, cloud, Azure, Android…) para estudiar y repasar.</p>
+      <a href="https://kanarath.github.io/pentest-academy/" target="_blank" rel="noopener">kanarath.github.io/pentest-academy →</a>
+    </article>
+    <article class="card">
+      <p class="ct" data-i18n="pr.lt">APRENDER JUGANDO</p>
+      <h3 data-i18n="pr.lh">Más academias propias</h3>
+      <p data-i18n="pr.lp">Aplico el mismo método a todo: mecatrónica (Taller de Inventor), robótica (RoboLab), japonés (Kendo Nihongo) y modelado 3D (Forja Mecha).</p>
+      <a href="https://github.com/Kanarath" target="_blank" rel="noopener">github.com/Kanarath →</a>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="certs">
+  <header class="sh"><span class="sn">05</span><h2 data-i18n="h.certs">Certificaciones</h2></header>
+  <ul class="certs">
+    <li><b>Jr Penetration Tester</b><span>TryHackMe · dic. 2025</span><a href="https://tryhackme.com/certificate/THM-JB3P9CU29G" target="_blank" rel="noopener" data-i18n="verify">verificar</a></li>
+    <li><b>Cyber Security 101</b><span>TryHackMe · oct. 2025</span><a href="https://tryhackme.com/certificate/THM-3WX1BFHY0Y" target="_blank" rel="noopener" data-i18n="verify">verificar</a></li>
+    <li><b>Introduction to OSINT</b><span>Security Blue Team · jul. 2025</span></li>
+    <li><b>Intro to OSINT</b><span>My OSINT Training · jun. 2025</span><a href="https://www.myosint.training/certificates/2nxzp2usfe" target="_blank" rel="noopener" data-i18n="verify">verificar</a></li>
+    <li><b>CCNA: Introduction to Networks</b><span>Cisco · abr. 2025</span></li>
+    <li><b>Pre Security</b><span>TryHackMe · feb. 2025</span><a href="https://tryhackme.com/certificate/THM-IZQ4NOXYQJ" target="_blank" rel="noopener" data-i18n="verify">verificar</a></li>
+    <li><b data-i18n="c.bootcamp">Bootcamp de Ciberseguridad</b><span>Ironhack · 2025</span></li>
+    <li><b data-i18n="c.events">Eventos y CTF</b><span>OSINTCon 2025 · C1b3rWall 2025 · Maltego OSINT CTF 2025</span></li>
+  </ul>
+</section>
+
+<section class="section" id="stack">
+  <header class="sh"><span class="sn">06</span><h2 data-i18n="h.stack">Stack</h2></header>
+  <div class="stack">
+    <div><h3 data-i18n="s.off">Seguridad ofensiva</h3><p>Burp Suite · Nmap · Metasploit · Nessus · OWASP Top 10 · Wireshark</p></div>
+    <div><h3>AI Security</h3><p>LLM red teaming · prompt injection · RAG · agentes · garak · promptfoo · PyRIT</p></div>
+    <div><h3 data-i18n="s.ai">IA aplicada</h3><p>Claude · Claude Code · skills · Ollama · Python · automatización</p></div>
+    <div><h3 data-i18n="s.grc">Normas y redes</h3><p>ISO/IEC 27001 · TCP/IP · DNS · VPN · Linux · Windows · Zabbix</p></div>
+    <div><h3>OSINT</h3><p>Maltego · Recon-ng · theHarvester · Shodan · EXIF</p></div>
+    <div><h3 data-i18n="s.code">Código</h3><p>Python · Bash · PowerShell · JavaScript · GDScript · C#</p></div>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <header class="sh"><span class="sn">07</span><h2 data-i18n="h.contact">Contacto</h2></header>
+  <p class="big" data-i18n="ct.lead">¿Tienes un puesto de pentesting o AI Security? Hablemos.</p>
+  <div class="links">
+    <a class="btn btn-red" href="mailto:gerard.montero.s@gmail.com">gerard.montero.s@gmail.com</a>
+    <a class="btn btn-ghost" href="https://www.linkedin.com/in/gerard-montero-sellares-3005499a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-ghost" href="https://github.com/Kanarath" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn btn-ghost" href="https://tryhackme.com/p/kanarath" target="_blank" rel="noopener">TryHackMe</a>
+    <a class="btn btn-ghost" href="cv/Gerard-Montero-CV-ES.pdf" download data-i18n="ct.cv" data-i18n-href="cv">CV (PDF)</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span>© 2026 Gerard Montero Sellarés</span><span class="kanji" aria-hidden="true">浪人</span><span>kanarath.github.io</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
