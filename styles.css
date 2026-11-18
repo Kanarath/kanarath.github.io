@@ -88,7 +88,7 @@ h1 span { color: var(--red); display: block; }
 .btn-ghost:hover { background: var(--amber); color: var(--bg); }
 
 .hero-photo { position: relative; padding: 20px; justify-self: center; max-width: 420px; width: 100%; }
-.hero-photo img { width: 100%; height: auto; aspect-ratio: 717 / 820; object-fit: cover; }
+.hero-photo img { width: 100%; height: auto; aspect-ratio: 720 / 894; object-fit: cover; }
 .hero-photo .c { position: absolute; width: 38px; height: 38px; border: 0 solid var(--red); }
 .hero-photo .a { top: 0; left: 0; border-width: 2px 0 0 2px; }
 .hero-photo .b { top: 0; right: 0; border-width: 2px 2px 0 0; }
