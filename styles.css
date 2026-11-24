@@ -133,7 +133,7 @@ h3 { font: 600 20px/1.3 var(--head); }
 .timeline ul li::before { content: "›"; position: absolute; left: 0; color: var(--red); }
 
 .feature { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start; color: var(--muted); }
-.feature .btn { margin-top: 26px; }
+.feature .btns { margin-top: 26px; }
 .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 .chips li { font: 12px var(--mono); border: 1px solid var(--line); padding: 5px 10px; color: var(--text); }
 .term { list-style: none; background: var(--bg-2); border: 1px solid var(--line); border-top: 2px solid var(--red); padding: 20px 22px; font: 13px/2 var(--mono); color: var(--text); }

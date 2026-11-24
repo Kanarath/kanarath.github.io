@@ -31,7 +31,7 @@ const EN = {
   'ar.k': 'AI ENGINEERING AND AI SECURITY ACADEMY',
   'ar.lead': 'I don’t just use AI: I learn to build it, attack it and defend it.',
   'ar.p': 'AI RONIN is an interactive academy built in Godot 4 with real labs in Python and local models. I designed and directed it, with AI-assisted development (Claude Code), and I use it daily as a student.',
-  'ar.c1': 'RAG and agent security', 'ar.btn': 'VIEW ON GITHUB',
+  'ar.c1': 'RAG and agent security', 'ar.btn': 'VIEW ON GITHUB', 'ar.play': 'PLAY ON ITCH.IO',
   'ar.t1': 'ML and LLM fundamentals', 'ar.t2': 'attacks and defences: prompts, RAG, agents',
   'ar.t3': 'red team method and reporting', 'ar.t4': 'adversarial ML and AI Ops',
   'ar.t5': 'final AI Red Team Assessment', 'ar.t6': 'missions · CTF mode',
